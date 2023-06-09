@@ -1,5 +1,6 @@
 import hBg from './assets/hot.jpg'
 import cBg from './assets/cold.jpg'
+import logo from './assets/OpenWeather.jpg'
 import WeatherDescriptions from './components/WeatherDescriptions';
 import { useEffect, useState } from 'react';
 import { getFWeatherData } from './weatherService';
@@ -66,6 +67,13 @@ function App() {
           </div>
 
           <WeatherDescriptions weather={weather} units={units}/>
+          <div className= "attribution">
+            <img src={logo} alt="" width={20} height={20}/>
+            Weather data provided by
+            <a href="https://openweathermap.org/">
+                OpenWeather
+            </a>
+          </div>
         </div>
           )
         }
