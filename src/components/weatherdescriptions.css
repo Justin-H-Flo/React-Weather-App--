@@ -1,0 +1,35 @@
+.section_descriptions{
+    display: grid;
+    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--section-overlay);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.description_card-icon {
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 11px;
+    gap: 6px;
+}
+
+.description_card-icon>small {
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 1024px) {
+    .section_descriptions {
+        grid-template-columns: 1fr 1fr;
+    }
+}
